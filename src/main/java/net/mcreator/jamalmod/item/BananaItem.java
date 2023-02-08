@@ -1,38 +1,71 @@
 
 package net.mcreator.jamalmod.item;
 
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.core.BlockPos;
 
-public class BananaItem extends PickaxeItem {
+import net.mcreator.jamalmod.procedures.BananaRightclickedProcedure;
+
+import java.util.List;
+
+import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap;
+
+public class BananaItem extends Item {
 	public BananaItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 100;
-			}
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(1000));
+	}
 
-			public float getSpeed() {
-				return 4f;
-			}
+	@Override
+	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
+		return List.of().contains(blockstate.getBlock()) ? 4f : 1;
+	}
 
-			public float getAttackDamageBonus() {
-				return 2f;
-			}
+	@Override
+	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+		return true;
+	}
 
-			public int getLevel() {
-				return 1;
-			}
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+		return true;
+	}
 
-			public int getEnchantmentValue() {
-				return 2;
-			}
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		BananaRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		return ar;
+	}
 
-			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
-			}
-		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+	@Override
+	public int getEnchantmentValue() {
+		return 2;
+	}
+
+	@Override
+	public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot equipmentSlot) {
+		if (equipmentSlot == EquipmentSlot.MAINHAND) {
+			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 2f, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
+			return builder.build();
+		}
+		return super.getDefaultAttributeModifiers(equipmentSlot);
 	}
 }

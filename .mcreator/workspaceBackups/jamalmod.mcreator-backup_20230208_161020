@@ -12,40 +12,6 @@
           "src/main/resources/assets/jamalmod/models/item/banana.json"
         ]
       }
-    },
-    {
-      "name": "BananaRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "banana_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jamalmod/procedures/BananaRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],

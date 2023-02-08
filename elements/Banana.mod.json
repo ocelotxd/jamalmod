@@ -8,20 +8,23 @@
     "name": "Banana",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "COMBAT"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Special",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "usageCount": 1000,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BananaRightclicked"
+    }
   }
 }
