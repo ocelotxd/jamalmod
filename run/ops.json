@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "uuid": "ee8a5460-6123-32d8-9ffd-025dc5df4a36",
+    "name": "ocelotxd",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "380df991-f603-344c-a090-369bad2a924a",
+    "name": "Dev",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

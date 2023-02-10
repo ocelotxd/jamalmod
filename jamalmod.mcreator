@@ -170,6 +170,153 @@
           "src/main/java/net/mcreator/jamalmod/client/renderer/JmalaRenderer.java"
         ]
       }
+    },
+    {
+      "name": "Mrhnn",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mrhnn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/block/MrhnnBlock.java",
+          "src/main/resources/assets/jamalmod/models/block/mrhnn.json",
+          "src/main/resources/assets/jamalmod/models/item/mrhnn.json",
+          "src/main/resources/assets/jamalmod/blockstates/mrhnn.json"
+        ]
+      },
+      "path": "~/mereheane"
+    },
+    {
+      "name": "MrhnnOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mrhnn_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/MrhnnOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mereheane"
+    },
+    {
+      "name": "Mrhhhnb",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mrhhhnb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/MrhhhnbProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mereheane"
+    },
+    {
+      "name": "Marihuana",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marihuana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jamalmod/models/item/marihuana.json",
+          "src/main/resources/assets/jamalmod/models/block/marihuana.json",
+          "src/main/resources/assets/jamalmod/blockstates/marihuana.json",
+          "src/main/java/net/mcreator/jamalmod/block/MarihuanaBlock.java"
+        ]
+      },
+      "path": "~/mereheane"
+    },
+    {
+      "name": "MarihuanaUpdateTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marihuana_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/MarihuanaUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/mereheane"
+    },
+    {
+      "name": "Mrhn",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mrhn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jamalmod/models/item/mrhn.json",
+          "src/main/resources/assets/jamalmod/models/block/mrhn.json",
+          "src/main/java/net/mcreator/jamalmod/block/MrhnBlock.java",
+          "src/main/resources/assets/jamalmod/blockstates/mrhn.json"
+        ]
+      },
+      "path": "~/mereheane"
     }
   ],
   "variable_elements": [],
@@ -193,6 +340,7 @@
   ],
   "language_map": {
     "en_us": {
+      "block.jamalmod.mrhnn": "Marihuana",
       "item.jamalmod.marihuanium": "Marihuanium",
       "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
       "subtitles.ets": "hf",
@@ -200,16 +348,19 @@
       "block.jamalmod.marihuanium_ore": "Marihuanium Ore",
       "entity.jamalmod.turret": "TURRET",
       "item.jamalmod.jmaldisk": "Jmaldisk",
-      "entity.jamalmod.jmala": "JmalaEvolution",
       "item.jamalmod.banana": "Banana",
-      "item.jamalmod.jmala_spawn_egg": "JmalaEvolution Spawn Egg",
       "subtitles.fxdtgeazghr": "rgyzsdgtsdFG",
       "itemGroup.tabjamal_tab": "Jamal Tab"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "mereheane",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "jamalmod",

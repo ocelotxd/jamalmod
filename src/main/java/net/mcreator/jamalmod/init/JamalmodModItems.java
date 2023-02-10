@@ -27,6 +27,9 @@ public class JamalmodModItems {
 	public static final RegistryObject<Item> MARIHUANIUM = REGISTRY.register("marihuanium", () -> new MarihuaniumItem());
 	public static final RegistryObject<Item> MARIHUANIUM_ORE = block(JamalmodModBlocks.MARIHUANIUM_ORE, JamalmodModTabs.TAB_JAMAL_TAB);
 	public static final RegistryObject<Item> JMALA_SPAWN_EGG = REGISTRY.register("jmala_spawn_egg", () -> new ForgeSpawnEggItem(JamalmodModEntities.JMALA, -1, -1, new Item.Properties().tab(JamalmodModTabs.TAB_JAMAL_TAB)));
+	public static final RegistryObject<Item> MARIHUANA = block(JamalmodModBlocks.MARIHUANA, JamalmodModTabs.TAB_JAMAL_TAB);
+	public static final RegistryObject<Item> MRHN = block(JamalmodModBlocks.MRHN, JamalmodModTabs.TAB_JAMAL_TAB);
+	public static final RegistryObject<Item> MRHNN = block(JamalmodModBlocks.MRHNN, JamalmodModTabs.TAB_JAMAL_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
