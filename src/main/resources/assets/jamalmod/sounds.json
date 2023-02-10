@@ -8,5 +8,15 @@
         "stream": true
       }
     ]
+  },
+  "fxdtgeazghr": {
+    "category": "music",
+    "subtitle": "subtitles.fxdtgeazghr",
+    "sounds": [
+      {
+        "name": "jamalmod:dyhrt2",
+        "stream": true
+      }
+    ]
   }
 }
