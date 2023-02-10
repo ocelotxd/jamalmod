@@ -110,8 +110,8 @@
       "registry_name": "jmaldisk",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jamalmod/item/JmaldiskItem.java",
-          "src/main/resources/assets/jamalmod/models/item/jmaldisk.json"
+          "src/main/resources/assets/jamalmod/models/item/jmaldisk.json",
+          "src/main/java/net/mcreator/jamalmod/item/JmaldiskItem.java"
         ]
       }
     },
