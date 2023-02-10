@@ -37,8 +37,8 @@ ao:0
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:[]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","mod_resources","file/[TEXTURE] More TNT"]
+incompatibleResourcePacks:["file/[TEXTURE] More TNT"]
 lastServer:localhost:25463
 lang:en_us
 soundDevice:""

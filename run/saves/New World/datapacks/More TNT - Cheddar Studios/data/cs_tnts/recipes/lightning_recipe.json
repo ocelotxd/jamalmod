@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " a ",
+        "aSa",
+        " a "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:tnt"
+        },
+        "a": {
+            "item": "minecraft:lightning_rod"
+        }
+        
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
+

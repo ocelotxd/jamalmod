@@ -1,0 +1,15 @@
+function cs_tnts:blackhole/give
+function cs_tnts:boulder/give
+function cs_tnts:fireball/give
+function cs_tnts:fliparoo/give
+function cs_tnts:floatation/give
+function cs_tnts:food/give
+function cs_tnts:foraging/give
+function cs_tnts:house/give
+function cs_tnts:lightning/give
+function cs_tnts:looting/give
+function cs_tnts:mining/give
+function cs_tnts:split/give
+function cs_tnts:sponge/give
+function cs_tnts:upgrade/give
+function cs_tnts:void/give

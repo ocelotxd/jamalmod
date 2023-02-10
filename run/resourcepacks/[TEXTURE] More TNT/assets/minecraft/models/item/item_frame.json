@@ -1,0 +1,24 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+     "layer0": "item/item_frame"
+    },
+   
+    "overrides": [
+     { "predicate": {"custom_model_data": 2000}, "model": "tntmodel/boulder"},
+     { "predicate": {"custom_model_data": 2001}, "model": "tntmodel/blackhole"},
+     { "predicate": {"custom_model_data": 2002}, "model": "tntmodel/lightning"},
+     { "predicate": {"custom_model_data": 2003}, "model": "tntmodel/fireball"},
+     { "predicate": {"custom_model_data": 2004}, "model": "tntmodel/mining"},
+     { "predicate": {"custom_model_data": 2005}, "model": "tntmodel/sponge"},
+     { "predicate": {"custom_model_data": 2006}, "model": "tntmodel/foraging"},
+     { "predicate": {"custom_model_data": 2007}, "model": "tntmodel/house"},
+     { "predicate": {"custom_model_data": 2008}, "model": "tntmodel/fliparoo"},
+     { "predicate": {"custom_model_data": 2009}, "model": "tntmodel/void"},
+     { "predicate": {"custom_model_data": 2010}, "model": "tntmodel/floatation"},
+     { "predicate": {"custom_model_data": 2011}, "model": "tntmodel/upgrade"},
+     { "predicate": {"custom_model_data": 2012}, "model": "tntmodel/split"},
+     { "predicate": {"custom_model_data": 2013}, "model": "tntmodel/food"},
+     { "predicate": {"custom_model_data": 2014}, "model": "tntmodel/looting"}
+    ]
+}

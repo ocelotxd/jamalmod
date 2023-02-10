@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " c ",
+        "iSi",
+        " a "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:tnt"
+        },
+        "c": {
+            "item": "minecraft:cobblestone"
+        },
+        "i": {
+            "item": "minecraft:dirt"
+        },
+        "a": {
+            "item": "minecraft:oak_sapling"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
+
