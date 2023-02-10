@@ -1,0 +1,214 @@
+{
+  "mod_elements": [
+    {
+      "name": "Banana",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/item/BananaItem.java",
+          "src/main/resources/assets/jamalmod/models/item/banana.json"
+        ]
+      }
+    },
+    {
+      "name": "BananaRightclicked",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/BananaRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TURRETOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turret_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/TURRETOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TURRET",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turret",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jamalmod/models/item/turret_spawn_egg.json",
+          "src/main/java/net/mcreator/jamalmod/client/renderer/TURRETRenderer.java",
+          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntity.java",
+          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntityProjectile.java",
+          "src/main/resources/data/jamalmod/forge/biome_modifier/turret_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Jmaldisk",
+      "type": "musicdisc",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jmaldisk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/item/JmaldiskItem.java",
+          "src/main/resources/assets/jamalmod/models/item/jmaldisk.json"
+        ]
+      }
+    },
+    {
+      "name": "JamalTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jamal_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Marihuanium",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marihuanium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/item/MarihuaniumItem.java",
+          "src/main/resources/assets/jamalmod/models/item/marihuanium.json"
+        ]
+      }
+    },
+    {
+      "name": "MarihuaniumOre",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marihuanium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jamalmod/models/item/marihuanium_ore.json",
+          "src/main/resources/assets/jamalmod/models/block/marihuanium_ore.json",
+          "src/main/resources/assets/jamalmod/blockstates/marihuanium_ore.json",
+          "src/main/java/net/mcreator/jamalmod/block/MarihuaniumOreBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ets",
+      "files": [
+        "dyhrt"
+      ],
+      "category": "music",
+      "subtitle": "hf"
+    },
+    {
+      "name": "fxdtgeazghr",
+      "files": [
+        "dyhrt2"
+      ],
+      "category": "music",
+      "subtitle": "rgyzsdgtsdFG"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.jamalmod.turret": "TURRET",
+      "item.jamalmod.marihuanium": "Marihuanium",
+      "item.jamalmod.jmaldisk": "Jmaldisk",
+      "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
+      "item.jamalmod.banana": "Banana",
+      "subtitles.fxdtgeazghr": "rgyzsdgtsdFG",
+      "subtitles.ets": "hf",
+      "itemGroup.tabjamal_tab": "Jamal Tab",
+      "item.jamalmod.jmaldisk.desc": "zfrxc fa",
+      "block.jamalmod.marihuanium_ore": "Marihuanium Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "jamalmod",
+    "modName": "jamalmod",
+    "version": "1.0.0",
+    "author": "ocelo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.jamalmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300104717
+}
