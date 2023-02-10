@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jamalmod:block/marihuanium_ore"
+    },
+    "facing=east": {
+      "model": "jamalmod:block/marihuanium_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jamalmod:block/marihuanium_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jamalmod:block/marihuanium_ore",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "jamalmod:block/marihuanium_ore",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "jamalmod:block/marihuanium_ore",
+      "x": 90
+    }
+  }
+}

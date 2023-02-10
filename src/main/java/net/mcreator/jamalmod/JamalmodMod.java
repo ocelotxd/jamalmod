@@ -33,6 +33,7 @@ import net.mcreator.jamalmod.init.JamalmodModTabs;
 import net.mcreator.jamalmod.init.JamalmodModSounds;
 import net.mcreator.jamalmod.init.JamalmodModItems;
 import net.mcreator.jamalmod.init.JamalmodModEntities;
+import net.mcreator.jamalmod.init.JamalmodModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,7 +54,7 @@ public class JamalmodMod {
 		JamalmodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		JamalmodModSounds.REGISTRY.register(bus);
-
+		JamalmodModBlocks.REGISTRY.register(bus);
 		JamalmodModItems.REGISTRY.register(bus);
 		JamalmodModEntities.REGISTRY.register(bus);
 
