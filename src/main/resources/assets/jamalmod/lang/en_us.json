@@ -1,3 +1,9 @@
 {
-  "item.jamalmod.banana": "Banana"
+  "entity.jamalmod.turret": "TURRET",
+  "item.jamalmod.jmaldisk": "Jmaldisk",
+  "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
+  "item.jamalmod.banana": "Banana",
+  "subtitles.ets": "hf",
+  "itemGroup.tabjamal_tab": "Jamal Tab",
+  "item.jamalmod.jmaldisk.desc": "zfrxc fa"
 }

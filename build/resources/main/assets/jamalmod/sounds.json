@@ -1,0 +1,12 @@
+{
+  "ets": {
+    "category": "music",
+    "subtitle": "subtitles.ets",
+    "sounds": [
+      {
+        "name": "jamalmod:dyhrt",
+        "stream": true
+      }
+    ]
+  }
+}
