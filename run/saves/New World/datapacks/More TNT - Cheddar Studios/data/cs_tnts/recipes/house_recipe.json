@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " a ",
+        "aSa",
+        " i "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:tnt"
+        },
+        "i": {
+            "item": "minecraft:emerald_block"
+        },
+        "a": {
+            "item": "minecraft:oak_log"
+        }
+        
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
+

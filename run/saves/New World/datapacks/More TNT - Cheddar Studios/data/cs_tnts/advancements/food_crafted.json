@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "cs_tnts:food_recipe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "cs_tnts:food/give"
+    }
+}
