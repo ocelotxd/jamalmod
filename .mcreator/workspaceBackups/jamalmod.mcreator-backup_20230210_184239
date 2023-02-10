@@ -3,6 +3,7 @@
     {
       "name": "Banana",
       "type": "tool",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "banana",
@@ -16,6 +17,7 @@
     {
       "name": "BananaRightclicked",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "banana_rightclicked",
@@ -46,12 +48,66 @@
           }
         ]
       }
+    },
+    {
+      "name": "TURRETOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turret_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jamalmod/procedures/TURRETOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TURRET",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turret",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jamalmod/models/item/turret_spawn_egg.json",
+          "src/main/java/net/mcreator/jamalmod/client/renderer/TURRETRenderer.java",
+          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntity.java",
+          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntityProjectile.java",
+          "src/main/resources/data/jamalmod/forge/biome_modifier/turret_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.jamalmod.turret": "TURRET",
+      "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
       "item.jamalmod.banana": "Banana"
     }
   },
