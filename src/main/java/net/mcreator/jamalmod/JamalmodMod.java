@@ -29,6 +29,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.jamalmod.init.JamalmodModTabs;
+import net.mcreator.jamalmod.init.JamalmodModSounds;
 import net.mcreator.jamalmod.init.JamalmodModItems;
 import net.mcreator.jamalmod.init.JamalmodModEntities;
 
@@ -48,8 +50,9 @@ public class JamalmodMod {
 
 	public JamalmodMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
+		JamalmodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		JamalmodModSounds.REGISTRY.register(bus);
 
 		JamalmodModItems.REGISTRY.register(bus);
 		JamalmodModEntities.REGISTRY.register(bus);
