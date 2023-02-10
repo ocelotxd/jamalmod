@@ -30,7 +30,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jamalmod.init.JamalmodModItems;
-import net.mcreator.jamalmod.init.JamalmodModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,7 +51,6 @@ public class JamalmodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		JamalmodModItems.REGISTRY.register(bus);
-		JamalmodModEntities.REGISTRY.register(bus);
 
 	}
 
