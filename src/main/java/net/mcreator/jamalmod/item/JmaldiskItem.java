@@ -19,7 +19,7 @@ import java.util.List;
 
 public class JmaldiskItem extends RecordItem {
 	public JmaldiskItem() {
-		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jamalmod:ets")), new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE), 100);
+		super(15, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("jamalmod:fxdtgeazghr")), new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE), 100);
 	}
 
 	@Override
