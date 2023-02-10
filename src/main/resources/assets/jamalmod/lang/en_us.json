@@ -1,6 +1,6 @@
 {
-  "block.jamalmod.marihuana": "Marihuana",
   "block.jamalmod.mrhnn": "Marihuana",
+  "block.jamalmod.marihuana": "Marihuana",
   "item.jamalmod.marihuanium": "Marihuanium",
   "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
   "block.jamalmod.mrhn": "Marihuana",
@@ -9,7 +9,9 @@
   "block.jamalmod.marihuanium_ore": "Marihuanium Ore",
   "entity.jamalmod.turret": "TURRET",
   "item.jamalmod.jmaldisk": "Jmaldisk",
+  "entity.jamalmod.jmala": "JmalaEvolution",
   "item.jamalmod.banana": "Banana",
+  "item.jamalmod.jmala_spawn_egg": "JmalaEvolution Spawn Egg",
   "subtitles.fxdtgeazghr": "rgyzsdgtsdFG",
   "itemGroup.tabjamal_tab": "Jamal Tab"
 }
