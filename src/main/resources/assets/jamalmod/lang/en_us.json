@@ -1,12 +1,15 @@
 {
-  "entity.jamalmod.turret": "TURRET",
+  "block.jamalmod.marihuana": "Marihuana",
+  "block.jamalmod.mrhnn": "Marihuana",
   "item.jamalmod.marihuanium": "Marihuanium",
-  "item.jamalmod.jmaldisk": "Jmaldisk",
   "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
+  "block.jamalmod.mrhn": "Marihuana",
+  "subtitles.ets": "hf",
+  "item.jamalmod.jmaldisk.desc": "zfrxc fa",
+  "block.jamalmod.marihuanium_ore": "Marihuanium Ore",
+  "entity.jamalmod.turret": "TURRET",
+  "item.jamalmod.jmaldisk": "Jmaldisk",
   "item.jamalmod.banana": "Banana",
   "subtitles.fxdtgeazghr": "rgyzsdgtsdFG",
-  "subtitles.ets": "hf",
-  "itemGroup.tabjamal_tab": "Jamal Tab",
-  "item.jamalmod.jmaldisk.desc": "zfrxc fa",
-  "block.jamalmod.marihuanium_ore": "Marihuanium Ore"
+  "itemGroup.tabjamal_tab": "Jamal Tab"
 }
