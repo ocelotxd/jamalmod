@@ -94,10 +94,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jamalmod/models/item/turret_spawn_egg.json",
+          "src/main/resources/data/jamalmod/forge/biome_modifier/turret_biome_modifier.json",
           "src/main/java/net/mcreator/jamalmod/client/renderer/TURRETRenderer.java",
           "src/main/java/net/mcreator/jamalmod/entity/TURRETEntity.java",
-          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntityProjectile.java",
-          "src/main/resources/data/jamalmod/forge/biome_modifier/turret_biome_modifier.json"
+          "src/main/java/net/mcreator/jamalmod/entity/TURRETEntityProjectile.java"
         ]
       }
     },
@@ -134,8 +134,8 @@
       "registry_name": "marihuanium",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jamalmod/item/MarihuaniumItem.java",
-          "src/main/resources/assets/jamalmod/models/item/marihuanium.json"
+          "src/main/resources/assets/jamalmod/models/item/marihuanium.json",
+          "src/main/java/net/mcreator/jamalmod/item/MarihuaniumItem.java"
         ]
       }
     },
@@ -148,10 +148,10 @@
       "registry_name": "marihuanium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jamalmod/models/item/marihuanium_ore.json",
-          "src/main/resources/assets/jamalmod/models/block/marihuanium_ore.json",
+          "src/main/java/net/mcreator/jamalmod/block/MarihuaniumOreBlock.java",
           "src/main/resources/assets/jamalmod/blockstates/marihuanium_ore.json",
-          "src/main/java/net/mcreator/jamalmod/block/MarihuaniumOreBlock.java"
+          "src/main/resources/assets/jamalmod/models/item/marihuanium_ore.json",
+          "src/main/resources/assets/jamalmod/models/block/marihuanium_ore.json"
         ]
       }
     },
@@ -180,10 +180,10 @@
       "registry_name": "mrhnn",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jamalmod/block/MrhnnBlock.java",
-          "src/main/resources/assets/jamalmod/models/block/mrhnn.json",
+          "src/main/resources/assets/jamalmod/blockstates/mrhnn.json",
           "src/main/resources/assets/jamalmod/models/item/mrhnn.json",
-          "src/main/resources/assets/jamalmod/blockstates/mrhnn.json"
+          "src/main/resources/assets/jamalmod/models/block/mrhnn.json",
+          "src/main/java/net/mcreator/jamalmod/block/MrhnnBlock.java"
         ]
       },
       "path": "~/mereheane"
@@ -341,14 +341,18 @@
   "language_map": {
     "en_us": {
       "block.jamalmod.mrhnn": "Marihuana",
+      "block.jamalmod.marihuana": "Marihuana",
       "item.jamalmod.marihuanium": "Marihuanium",
       "item.jamalmod.turret_spawn_egg": "TURRET Spawn Egg",
+      "block.jamalmod.mrhn": "Marihuana",
       "subtitles.ets": "hf",
       "item.jamalmod.jmaldisk.desc": "zfrxc fa",
       "block.jamalmod.marihuanium_ore": "Marihuanium Ore",
       "entity.jamalmod.turret": "TURRET",
       "item.jamalmod.jmaldisk": "Jmaldisk",
+      "entity.jamalmod.jmala": "JmalaEvolution",
       "item.jamalmod.banana": "Banana",
+      "item.jamalmod.jmala_spawn_egg": "JmalaEvolution Spawn Egg",
       "subtitles.fxdtgeazghr": "rgyzsdgtsdFG",
       "itemGroup.tabjamal_tab": "Jamal Tab"
     }
