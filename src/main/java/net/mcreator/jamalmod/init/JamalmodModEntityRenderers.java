@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.jamalmod.client.renderer.TURRETRenderer;
+import net.mcreator.jamalmod.client.renderer.JmalaRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class JamalmodModEntityRenderers {
@@ -19,5 +20,6 @@ public class JamalmodModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(JamalmodModEntities.TURRET.get(), TURRETRenderer::new);
 		event.registerEntityRenderer(JamalmodModEntities.TURRET_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(JamalmodModEntities.JMALA.get(), JmalaRenderer::new);
 	}
 }

@@ -8,6 +8,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
@@ -16,10 +17,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -36,6 +39,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Difficulty;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
@@ -46,6 +50,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.jamalmod.init.JamalmodModItems;
 import net.mcreator.jamalmod.init.JamalmodModEntities;
+
+import java.util.EnumSet;
 
 public class JmalaEntity extends PathfinderMob {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.PINK, ServerBossEvent.BossBarOverlay.NOTCHED_20);
@@ -76,16 +82,65 @@ public class JmalaEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new RemoveBlockGoal(Blocks.GRASS_BLOCK, this, 5, (int) 5));
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 2, 20) {
+			@Override
+			protected Vec3 getPosition() {
+				RandomSource random = JmalaEntity.this.getRandom();
+				double dir_x = JmalaEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = JmalaEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = JmalaEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				return new Vec3(dir_x, dir_y, dir_z);
+			}
+		});
+		this.goalSelector.addGoal(3, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(4, new Goal() {
+			{
+				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
+			}
+
+			public boolean canUse() {
+				if (JmalaEntity.this.getTarget() != null && !JmalaEntity.this.getMoveControl().hasWanted()) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				return JmalaEntity.this.getMoveControl().hasWanted() && JmalaEntity.this.getTarget() != null && JmalaEntity.this.getTarget().isAlive();
+			}
+
+			@Override
+			public void start() {
+				LivingEntity livingentity = JmalaEntity.this.getTarget();
+				Vec3 vec3d = livingentity.getEyePosition(1);
+				JmalaEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 5);
+			}
+
+			@Override
+			public void tick() {
+				LivingEntity livingentity = JmalaEntity.this.getTarget();
+				if (JmalaEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
+					JmalaEntity.this.doHurtTarget(livingentity);
+				} else {
+					double d0 = JmalaEntity.this.distanceToSqr(livingentity);
+					if (d0 < 16) {
+						Vec3 vec3d = livingentity.getEyePosition(1);
+						JmalaEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 5);
+					}
+				}
+			}
+		});
+		this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 25, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(7, new FloatGoal(this));
 	}
 
 	@Override
@@ -222,14 +277,14 @@ public class JmalaEntity extends PathfinderMob {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 3.8000000000000003);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 1);
 		builder = builder.add(Attributes.MAX_HEALTH, 37);
 		builder = builder.add(Attributes.ARMOR, 1.6);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 33);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2.6);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 3);
-		builder = builder.add(Attributes.FLYING_SPEED, 3.8000000000000003);
+		builder = builder.add(Attributes.FLYING_SPEED, 1);
 		return builder;
 	}
 }

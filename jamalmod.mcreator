@@ -164,10 +164,10 @@
       "registry_name": "jmala",
       "metadata": {
         "files": [
-          "src/main/resources/data/jamalmod/forge/biome_modifier/jmala_biome_modifier.json",
-          "src/main/java/net/mcreator/jamalmod/entity/JmalaEntity.java",
           "src/main/resources/assets/jamalmod/models/item/jmala_spawn_egg.json",
-          "src/main/java/net/mcreator/jamalmod/client/renderer/JmalaRenderer.java"
+          "src/main/java/net/mcreator/jamalmod/entity/JmalaEntity.java",
+          "src/main/java/net/mcreator/jamalmod/client/renderer/JmalaRenderer.java",
+          "src/main/resources/data/jamalmod/forge/biome_modifier/jmala_biome_modifier.json"
         ]
       }
     },

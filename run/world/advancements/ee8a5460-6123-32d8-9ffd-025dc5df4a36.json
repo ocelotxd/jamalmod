@@ -23,13 +23,19 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2023-02-10 19:25:05 +0100"
+    },
+    "done": true
+  },
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": "2023-02-10 19:25:07 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/dark_oak_boat": {
+  "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
       "in_water": "2023-02-10 19:25:05 +0100"
     },
@@ -38,12 +44,6 @@
   "minecraft:recipes/decorations/chest": {
     "criteria": {
       "has_lots_of_items": "2023-02-10 19:26:10 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2023-02-10 19:25:05 +0100"
     },
     "done": true
   },
@@ -74,21 +74,33 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/crossbow": {
-    "criteria": {
-      "has_string": "2023-02-10 19:29:56 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
       "in_water": "2023-02-10 19:25:05 +0100"
     },
     "done": true
   },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_string": "2023-02-10 19:29:56 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/loom": {
     "criteria": {
       "has_string": "2023-02-10 19:29:56 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "enchanted_golden_apple": "2023-02-10 20:04:58 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2023-02-10 20:04:45 +0100"
     },
     "done": true
   },
@@ -110,21 +122,15 @@
     },
     "done": true
   },
-  "minecraft:adventure/shoot_arrow": {
-    "criteria": {
-      "shot_arrow": "2023-02-10 19:28:03 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
       "in_water": "2023-02-10 19:25:05 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/bone_meal": {
+  "minecraft:adventure/shoot_arrow": {
     "criteria": {
-      "has_bone": "2023-02-10 19:32:53 +0100"
+      "shot_arrow": "2023-02-10 19:28:03 +0100"
     },
     "done": true
   },
@@ -140,6 +146,12 @@
       "minecraft:plains": "2023-02-10 19:23:16 +0100"
     },
     "done": false
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2023-02-10 19:32:53 +0100"
+    },
+    "done": true
   },
   "DataVersion": 3120
 }

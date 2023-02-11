@@ -1,9 +1,157 @@
-[10Feb2023 19:50:48.328] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\ppp\.mcreator\gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.2.0, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
-[10Feb2023 19:50:48.332] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.5 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[10Feb2023 19:50:48.451] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/ppp/.mcreator/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23120!/ Service=ModLauncher Env=CLIENT
-[10Feb2023 19:50:48.733] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ppp\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.2.0\5713dfd49576886a7ffc353f14f067ad42369592\javafmllanguage-1.19.2-43.2.0.jar is missing mods.toml file
-[10Feb2023 19:50:48.737] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ppp\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.2.0\51c88985dd125457fb8b6c2c58a4f3b9349a6b57\lowcodelanguage-1.19.2-43.2.0.jar is missing mods.toml file
-[10Feb2023 19:50:48.741] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ppp\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.2.0\f4fa83ef8129c7f7cc5847fbafb07f7ae86c1bb\mclanguage-1.19.2-43.2.0.jar is missing mods.toml file
-[10Feb2023 19:50:48.744] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ppp\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.2.0\d4dcb5b809b7f035ac22b058941cf81f84451545\fmlcore-1.19.2-43.2.0.jar is missing mods.toml file
-[10Feb2023 19:50:48.817] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[10Feb2023 19:50:49.753] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\ppp\.mcreator\gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
+[10Feb2023 19:56:30.149] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\ocelo\.mcreator\gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.2.0, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
+[10Feb2023 19:56:30.151] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.5 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[10Feb2023 19:56:30.266] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/ocelo/.mcreator/gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23120!/ Service=ModLauncher Env=CLIENT
+[10Feb2023 19:56:30.489] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ocelo\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.2.0\5713dfd49576886a7ffc353f14f067ad42369592\javafmllanguage-1.19.2-43.2.0.jar is missing mods.toml file
+[10Feb2023 19:56:30.491] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ocelo\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.2.0\51c88985dd125457fb8b6c2c58a4f3b9349a6b57\lowcodelanguage-1.19.2-43.2.0.jar is missing mods.toml file
+[10Feb2023 19:56:30.492] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ocelo\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.2.0\f4fa83ef8129c7f7cc5847fbafb07f7ae86c1bb\mclanguage-1.19.2-43.2.0.jar is missing mods.toml file
+[10Feb2023 19:56:30.494] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\ocelo\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.2.0\d4dcb5b809b7f035ac22b058941cf81f84451545\fmlcore-1.19.2-43.2.0.jar is missing mods.toml file
+[10Feb2023 19:56:30.537] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[10Feb2023 19:56:31.332] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\ocelo\.mcreator\gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
+[10Feb2023 19:56:33.496] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[10Feb2023 19:56:34.367] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/ocelo/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.2.0_mapped_official_1.19.2/forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/assets/.mcassetsroot' uses unexpected schema
+[10Feb2023 19:56:34.368] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/ocelo/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.2.0_mapped_official_1.19.2/forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/data/.mcassetsroot' uses unexpected schema
+[10Feb2023 19:56:34.379] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Feb2023 19:56:34.384] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[10Feb2023 19:56:34.468] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[10Feb2023 19:56:34.775] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.2.0, for MC 1.19.2 with MCP 20220805.130853
+[10Feb2023 19:56:34.775] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.2.0 Initialized
+[10Feb2023 19:56:35.402] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[10Feb2023 19:56:35.561] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[10Feb2023 19:56:35.577] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources, [TEXTURE] More TNT
+[10Feb2023 19:56:35.848] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10Feb2023 19:56:36.496] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[10Feb2023 19:56:36.515] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Shutdown failure!
+java.util.ConcurrentModificationException: null
+	at java.util.HashMap.forEach(HashMap.java:1424) ~[?:?]
+	at net.minecraft.client.renderer.texture.TextureManager.close(TextureManager.java:176) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?]
+	at net.minecraft.client.Minecraft.close(Minecraft.java:1036) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?]
+	at net.minecraft.client.Minecraft.destroy(Minecraft.java:1010) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?]
+	at net.minecraft.client.main.Main.run(Main.java:228) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?]
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19.2-43.2.0.jar%2395!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.l[10Feb2023 19:56:37.227] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[10Feb2023 19:56:37.602] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
+[10Feb2023 19:56:37.764] [main/WARN] [net.minecraft.server.dedicated.DedicatedServerProperties/]: Failed to parse level-type default, defaulting to minecraft:normal
+[10Feb2023 19:56:37.988] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.19.2
+[10Feb2023 19:56:37.988] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[10Feb2023 19:56:37.988] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: CREATIVE
+[10Feb2023 19:56:37.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[10Feb2023 19:56:38.038] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on 26.163.169.250:25565
+[10Feb2023 19:56:38.049] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[10Feb2023 19:56:38.184] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10Feb2023 19:56:38.184] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[10Feb2023 19:56:38.184] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10Feb2023 19:56:38.184] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[10Feb2023 19:56:38.208] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[10Feb2023 19:56:38.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[10Feb2023 19:56:39.815] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Feb2023 19:56:39.818] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Feb2023 19:56:39.826] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Feb2023 19:56:39.832] [Worker-Main-15/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Feb2023 19:56:40.309] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
+[10Feb2023 19:56:40.513] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2204 ms
+[10Feb2023 19:56:40.513] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.319s)! For help, type "help"
+[10Feb2023 19:56:40.516] [Server thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[10Feb2023 19:56:40.520] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[10Feb2023 19:56:45.146] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@78b2c7eb
+[10Feb2023 19:56:45.154] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[/26.107.181.153:63235] logged in with entity id 2789 at (229.55388887916104, 84.33838169247777, -149.209216467286)
+[10Feb2023 19:56:45.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[10Feb2023 19:57:42.026] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@3e8c9f2e
+[10Feb2023 19:57:42.029] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: ocelotxd[/26.163.169.250:50921] logged in with entity id 3257 at (104.0093220455658, 82.0, -66.37632693066283)
+[10Feb2023 19:57:42.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd joined the game
+[10Feb2023 19:57:47.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to ocelotxd]
+[10Feb2023 19:58:10.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 19:58:12.796] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 19:58:25.980] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev moved too quickly! 9.358979026401812,3.750000149011612,4.221857612893146
+[10Feb2023 19:58:47.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 19:58:52.056] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd was kicked for floating too long!
+[10Feb2023 19:58:52.098] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd lost connection: Flying is not enabled on this server
+[10Feb2023 19:58:52.098] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd left the game
+[10Feb2023 19:59:00.487] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@53f4bec5
+[10Feb2023 19:59:00.493] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: ocelotxd[/26.163.169.250:50939] logged in with entity id 8406 at (100.63998276008066, 254.11296448451913, -59.08628568436428)
+[10Feb2023 19:59:00.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd joined the game
+[10Feb2023 19:59:04.791] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd was kicked for floating too long!
+[10Feb2023 19:59:04.841] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd lost connection: Flying is not enabled on this server
+[10Feb2023 19:59:04.841] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd left the game
+[10Feb2023 19:59:12.187] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@4c41a00e
+[10Feb2023 19:59:12.193] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: ocelotxd[/26.163.169.250:50943] logged in with entity id 8943 at (100.63998276008066, 129.6929824980166, -59.08628568436428)
+[10Feb2023 19:59:12.198] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd joined the game
+[10Feb2023 19:59:14.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd fell from a high place
+[10Feb2023 19:59:24.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 19:59:28.067] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 19:59:41.819] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/3420, l='ServerLevel[world]', x=98.94, y=234.69, z=-47.23] died: rwaa was slain by Dev
+[10Feb2023 19:59:48.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 19:59:51.785] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 19:59:56.790] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/10116, l='ServerLevel[world]', x=82.50, y=-17.00, z=-45.50] died: rwaa fell out of the world
+[10Feb2023 19:59:56.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Killed 1462 entities]
+[10Feb2023 20:00:01.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Removed 348 items from 2 players]
+[10Feb2023 20:00:02.331] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/10262, l='ServerLevel[world]', x=93.50, y=-31.00, z=-82.50] died: rwaa fell out of the world
+[10Feb2023 20:00:02.331] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/10264, l='ServerLevel[world]', x=93.50, y=-31.00, z=-84.50] died: rwaa fell out of the world
+[10Feb2023 20:00:02.333] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/10302, l='ServerLevel[world]', x=136.50, y=23.00, z=-70.50] died: rwaa fell out of the world
+[10Feb2023 20:00:02.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Killed 692 entities]
+[10Feb2023 20:00:04.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:00:08.682] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 20:00:10.454] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:00:18.163] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 20:00:20.287] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:00:22.489] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 20:00:24.070] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:00:29.370] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Survival Mode]
+[10Feb2023 20:00:41.725] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:01:03.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Gamerule randomTickSpeed is now set to: 20000]
+[10Feb2023 20:01:05.524] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2153ms or 43 ticks behind
+[10Feb2023 20:01:25.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Survival Mode]
+[10Feb2023 20:01:30.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:01:42.880] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Gamerule randomTickSpeed is now set to: 20]
+[10Feb2023 20:01:43.546] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 23025ms or 460 ticks behind
+[10Feb2023 20:01:50.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Survival Mode]
+[10Feb2023 20:01:55.864] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set Dev's game mode to Survival Mode]
+[10Feb2023 20:02:06.132] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:02:11.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Survival Mode]
+[10Feb2023 20:03:06.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd fell from a high place
+[10Feb2023 20:03:11.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Teleported ocelotxd to Dev]
+[10Feb2023 20:03:11.543] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! 117.43763262014582,12.0,-70.03378470159761
+[10Feb2023 20:03:11.559] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! 117.43763262014582,12.0,-70.03378470159761
+[10Feb2023 20:03:17.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Teleported ocelotxd to Dev]
+[10Feb2023 20:03:17.859] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! -0.5867043484986567,12.921599998474122,-3.1996453857804568
+[10Feb2023 20:04:12.467] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set ocelotxd's game mode to Spectator Mode]
+[10Feb2023 20:04:20.578] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Survival Mode]
+[10Feb2023 20:04:39.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd was slain by Dev
+[10Feb2023 20:04:41.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Creative Mode]
+[10Feb2023 20:04:51.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set own game mode to Survival Mode]
+[10Feb2023 20:04:52.994] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[10Feb2023 20:04:54.230] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Teleported ocelotxd to Dev]
+[10Feb2023 20:04:54.238] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! 102.80000001192093,4.012941811018607,-77.449758796066
+[10Feb2023 20:04:54.238] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! 102.80000001192093,4.012941811018607,-77.449758796066
+[10Feb2023 20:04:54.254] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: ocelotxd moved too quickly! 102.80000001192093,4.012941811018607,-77.449758796066
+[10Feb2023 20:05:07.259] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Set Dev's game mode to Survival Mode]
+[10Feb2023 20:05:10.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [ocelotxd: Teleported Dev to ocelotxd]
+[10Feb2023 20:05:42.276] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12112, l='ServerLevel[world]', x=107.05, y=74.00, z=-76.05] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.425] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12118, l='ServerLevel[world]', x=107.05, y=77.00, z=-76.05] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.426] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12120, l='ServerLevel[world]', x=107.05, y=77.00, z=-74.95] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.576] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12126, l='ServerLevel[world]', x=105.95, y=79.00, z=-76.05] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.576] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12127, l='ServerLevel[world]', x=107.05, y=79.00, z=-76.05] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.626] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12105, l='ServerLevel[world]', x=107.05, y=71.00, z=-76.05] died: rwaa suffocated in a wall whilst fighting Dev
+[10Feb2023 20:05:42.726] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12132, l='ServerLevel[world]', x=105.95, y=80.00, z=-78.05] died: rwaa suffocated in a wall
+[10Feb2023 20:05:42.727] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12134, l='ServerLevel[world]', x=107.05, y=80.00, z=-78.05] died: rwaa suffocated in a wall
+[10Feb2023 20:06:08.177] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12739, l='ServerLevel[world]', x=68.50, y=87.00, z=-92.50] died: rwaa suffocated in a wall
+[10Feb2023 20:06:08.580] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/12772, l='ServerLevel[world]', x=66.95, y=91.00, z=-94.05] died: rwaa suffocated in a wall
+[10Feb2023 20:06:09.577] [Server thread/INFO] [net.minecraft.world.entity.LivingEntity/]: Named entity JmalaEntity['rwaa'/13008, l='ServerLevel[world]', x=64.50, y=107.00, z=-98.50] died: rwaa suffocated in a wall
+[10Feb2023 20:06:33.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ocelotxd was slain by rwaa
+[10Feb2023 20:06:52.277] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[10Feb2023 20:06:52.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[10Feb2023 20:07:23.073] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[10Feb2023 20:07:23.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10Feb2023 20:07:23.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10Feb2023 20:07:23.128] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10Feb2023 20:07:23.901] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10Feb2023 20:07:23.942] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10Feb2023 20:07:23.945] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[10Feb2023 20:07:23.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[10Feb2023 20:07:23.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10Feb2023 20:07:23.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10Feb2023 20:07:23.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
